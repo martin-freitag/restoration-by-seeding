@@ -1,0 +1,74 @@
+	Establishment success (%)	No. newly sown	No. established	No. newly sown	No. established	No. newly sown	No. established
+Achillea millefolium	33	7	1	5	3		
+Agrimonia eupatoria	8	17	1	7	2	25	1
+Anthriscus sylvestris	3	8	0	12	1	20	0
+Betonica officinalis	4	24	0	23	2		
+Campanula rotundifolia	0	16	0	23	0	25	0
+Cardamine pratensis	10	20	2				
+Centaurea jacea	17	24	1	15	6	25	4
+Centaurea scabiosa	8	25	0	23	3	25	3
+Cichorium intybus	0	25	0	10	0	21	0
+Cirsium oleraceum	2	22	1	23	0	21	0
+Clinopodium vulgare	7	25	0	21	3		
+Crepis biennis	17	12	2				
+Daucus carota	7	18	0	6	2	18	1
+Dianthus carthusianorum	17	24	3	22	5		
+Falcaria vulgaris	0					24	0
+Galium mollugo	15	3	0	9	2	14	2
+Geranium pratense	23	13	1	18	6		
+Heracleum sphondylium	7	10	0	18	2	18	1
+Hypericum perforatum	5	19	1	16	1	23	1
+Hypochaeris radicata	6	19	2	23	1	22	1
+Knautia arvensis	10	16	4			24	0
+Leontodon autumnalis	6	21	1			14	1
+Leontodon hispidus	0	20	0	17	0	24	0
+Leucanthemum vulgare	12	18	1	15	3		
+Linaria vulgaris	0	25	0	22	0		
+Lychnis flos-cuculi	1	24	0	22	0	24	1
+Origanum vulgare	7	24	2	23	1	24	2
+Pastinaca sativa	0	25	0	12	0		
+Pimpinella major	0			22	0	25	0
+Pimpinella saxifraga	0	17	0			25	0
+Plantago lanceolata	7	3	1	2	0	9	0
+Plantago media	16	11	1	16	6	23	1
+Primula veris	25	22	3	18	7		
+Prunella vulgaris	0	25	0	19	0	25	0
+Ranunculus acris	0	3	0	13	0		
+Ranunculus bulbosus	21	14	3				
+Rumex acetosa	5	6	1	16	0		
+Rumex acetosella	0					20	0
+Salvia pratensis	3	22	0	23	0	25	2
+Sanguisorba minor	22	19	4	20	5	21	4
+Sanguisorba officinalis	0					25	0
+Scabiosa columbaria	2			22	0	23	1
+Silaum silaus	0	25	0			24	0
+Silene latifolia	1	25	0	23	0	20	1
+Silene vulgaris	3	23	0	23	1	25	1
+Succisa pratensis	0					25	0
+Thymus pulegioides	5	18	0			24	2
+Tragopogon pratensis	12	16	1	11	5	22	0
+Veronica chamaedrys	5	6	1			14	0
+Veronica officinalis	0	25	0				
+Lathyrus pratensis	24	18	3	16	5		
+Lotus corniculatus	0	13	0				
+Medicago lupulina	0	14	0				
+Trifolium campestre	0	20	0				
+Trifolium medium	0	20	0				
+Trifolium pratense	29	1	0	6	2		
+Vicia cracca	22	18	4				
+Agrostis capillaris	2	24	0	17	0	20	1
+Anthoxanthum odoratum	3	10	0	20	1		
+Arrhenatherum elatius	16	7	0	4	1	14	3
+Avenula pubescens	8	10	0	14	2		
+Briza media	2	21	1	20	0		
+Bromus erectus	0	15	0	19	0		
+Bromus hordeaceus	12	11	0	4	2	11	1
+Cynosurus cristatus	7	8	0	13	3	21	0
+Dactylis glomerata	29	2	0	1	1	4	1
+Deschampsia cespitosa	2	25	0			21	1
+Festuca pratensis	0	3	0			12	0
+Festuca rubra	8	9	1	4	0	11	1
+Holcus lanatus	11					9	1
+Luzula campestris	10	18	1	19	3	23	2
+Poa pratensis	100	2	2				
+Trisetum flavescens	6	3	0	7	2	22	0

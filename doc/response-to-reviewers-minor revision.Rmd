@@ -1,0 +1,163 @@
+---
+output:
+#  bookdown::html_document2:
+#    toc: false
+#    number_sections: false
+#    fig_caption: yes
+
+  bookdown::word_document2:
+    reference_docx: "references/template.docx"
+    toc: false
+    number_sections: false
+    fig_caption: yes
+mainfont: Calibri
+sansfont: Calibri
+fontsize: 11pt
+geometry: margin = 1in
+linestretch: 1  
+header-includes:
+- \usepackage{setspace}\doublespacing
+#- \usepackage[left]{lineno}
+#- \linenumbers
+- \usepackage{dcolumn}
+- \usepackage{caption}
+- \usepackage{float}
+- \usepackage{afterpage}
+- \usepackage{siunitx}
+- \usepackage{amsmath}
+bibliography: references/GrasslandRefs.bib  # synced with zotero library
+csl: references/journal-of-applied-ecology.csl # citation style
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(fig.pos = 'H') # prevent figures from floating around
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE)
+```
+
+
+## **Response to associate editor**
+
+**Manuscript JAPPL-2020-00916.R1**
+
+**Response to reviewers for manuscript entitled 'Restoration of plant diversity in permanent grassland by seeding: assessing the limiting factors along land-use gradients'**
+
+\ 
+
+**Associate editor comments**
+
+The authors have conducted a really excellent revision - nicely done! I'm impressed by how thoroughly they have addressed each reviewer comment and think that the accompanying revisions to the manuscript have definitely improved it. The writing is now very strong and nicely matches the excellent experiment that this study is build on. Bravo.
+
+I have gone carefully through the manuscript and provide just a few more comments for the authors to consider, prior to finalizing this manuscript. I hope that these prove helpful.
+
+
+**Response**:
+
+Dear Dr. Brudvig, 
+
+we were happy to receive such a nice and positive feedback! 
+The detailed reviewer comments in the previous round have were very clear and constructive, 
+and I (the first author) am very glad the revisions have improved the manuscript. 
+Thank you very much for your suggestions, which we respond to point-by-point below.
+
+Kind regards,
+
+Martin Freitag (on behalf of all co-authors)
+
+
+\newpage
+
+
+**Detailed associate editor comments**
+
+1. I was glad to see that seed viability data are available and wonder 
+if the authors have considered correcting seeding density based on the viability data 
+(so that seeding density is based on estimate live seeding density)?
+I don’t suspect that this would have a large effect on the conclusions, 
+given that including density and viability separately in models 
+did not change the results substantially; 
+however, this would be a way to increase the accuracy of the seeding density data
+and also make these data continuous, which might have more desirable statistical properties. 
+Don’t feel obligated to redo analyses if you believe the current approach is sufficient or better,
+but it would be good to at least consider this possibility.
+
+**Response**:
+
+This really is a great idea and we were happy to replace the seeding density categories
+with a 'live seeding density' parameter in the trait establishment models. 
+This way we used only one parameter in the model, which is more accurate than the density categories.
+In the establishment prediction plots, we condition on mean live seeding density
+which is more precise than the 'mean' seeding density category.
+
+As expected, the results did change only marginally and hence we only have described
+the viability data and 'live seeding density' as predictor in the methods section.
+Thank you very much for this suggestion!
+
+\ 
+
+2. Permanent grassland. This seems like a reasonable term, 
+though I share Reviewer 2’s point that this is not commonly used.
+Can you provide a clear definition at first use at first mention in the Abstract (line 21) 
+and also at first mention in the main body of the text (line 49), 
+so that readers are not confused?
+
+**Response**:
+
+Thank you very much for emphasizing the non-European perspective.
+We have added a short definition in both the abstract and introduction:
+
+*'... i.e. long-term managed grassland not being used as cropland.'* (lines XXX)
+
+*'... i.e. continously managed grassland that was not used as cropland for at least five years.'* (lines XXX)
+
+\ 
+
+3. In the Abstract, would it be possible to briefly mention what the land-use gradient entails? 
+This will help readers put the findings in context without requiring reading into the paper first.
+
+**Response**:
+
+Thank you for this suggestion. In bullet point 3 in the abstract,
+we specified the land-use intensity gradient as follows:
+
+*'Along land-use intensity gradients, we found no direct effects of grazing or mowing on the establishment of sown species, but fertilization indirectly limited establishment in the combined treatment via a negative effect of productivity.'* (lines XXX)
+
+\ 
+
+4. Line 49. Given that the declines have not yet been halted, would it make more sense to say “faces”?
+
+**Response**:
+
+Revised as suggested.
+
+\ 
+
+5. Lines 62-65. I wonder whether the mention of hay transfer is critical here,
+given that the focus of this study is on seed sowing. Would it suffice to argue
+that seed sowing is a commonly employed technique, without mention of hay transfer here?
+If so, perhaps mention of how your findings might compare to hay transfer 
+as an alternative approach could be a point to consider in the Discussion?
+
+**Response**:
+
+Thank you very much for this suggestion. 
+Indeed, although hay transfer is the preferred restoration action 
+in nature conservation authorities in Germany,
+seed sowing is also applied widely.
+As we could only speculate about how seed sowing 
+relates to hay transfer in existing grasslands, we removed this part.
+
+
+\ 
+
+6. Line 307. Can you clarify “the disturbance”. I assume this is the experimental soil disturbance,
+but it will be good to clarify since land uses under study were also disturbances.
+This is perhaps a bit broader suggestion to clarify “disturbance” throughout the manuscript, 
+to avoid any ambiguities between the experimental soil disturbance and land-use associated disturbances (e.g., grazing).
+
+**Response**:
+
+We have carefully gone through the manuscript and explicitly specified 
+'topsoil disturbance' in places where disturbance could be ambiguous. 
+We hope that there are no unclear mentions of disturbance left.
+
+

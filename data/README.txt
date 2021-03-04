@@ -1,0 +1,3 @@
+The data used in this manuscript is freely available in the BExIS database at ...
+To reproduce the analyses, download the .zip file, extract the data 
+and place the .txt files here in the data/ folder.

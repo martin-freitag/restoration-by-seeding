@@ -1,0 +1,733 @@
+---
+output:
+  bookdown::pdf_document2:
+    latex_engine: xelatex
+    toc: false
+    number_sections: false
+    fig_caption: yes
+mainfont: Calibri
+sansfont: Calibri
+fontsize: 11pt
+geometry: margin = 1in
+linestretch: 2  
+header-includes:
+- \usepackage{setspace}\doublespacing
+- \usepackage{dcolumn}
+- \usepackage[labelfont=bf]{caption}
+- \usepackage{float}
+- \usepackage{afterpage}
+- \usepackage{siunitx}
+- \usepackage{amsmath}
+- \usepackage{graphicx}
+bibliography: references/GrasslandRefs.bib  # synced with zotero library
+csl: references/journal-of-applied-ecology.csl # citation style
+---
+
+# Restoration of plant diversity in permanent grassland by seeding: assessing the limiting factors along land-use gradients
+
+Martin Freitag^1^*, Valentin H. Klaus^2^, Ralph Bolliger^3^, Ute Hamer^1^, 
+Till Kleinebecker^4^, Daniel Prati^3^, Deborah Schäfer^5^, Norbert Hölzel^1^
+
+\ 
+
+^1^Institute of Landscape Ecology, University of Münster, Heisenbergstr. 2, 48149 Münster, Germany
+
+^2^Institute of Agricultural Sciences, ETH Zürich, Universitätstr. 2, 8092 Zürich, Switzerland
+
+^3^Institute of Plant Sciences, University of Bern, 3013 Bern, Switzerland.
+
+^4^Department of Landscape Ecology and Resource Management, 
+Justus Liebig University Giessen, Heinrich-Buff-Ring 26-32, 35392 Gießen, Germany
+
+^5^Botanical Garden of the University of Bern, Altenbergrain 21, 3013 Bern, Switzerland
+
+\ 
+
+*corresponding author: martin.freitag@uni-muenster.de
+
+\ 
+
+**Keywords**: dispersal limitation, fertilization, functional traits, land-use intensity,
+productivity, seed addition, seedling establishment, trait-environment interactions
+
+
+\newpage
+
+
+## ABSTRACT
+1.	Land-use intensification has caused dramatic declines in grassland biodiversity, 
+and in Europe this decline has not yet been halted. 
+Therefore, a major challenge in ecological restoration is 
+to effectively restore plant diversity in permanent grasslands, 
+i.e. long-term managed grassland not being used as cropland.
+As species richness is often limited by seed dispersal,
+introducing locally absent species is crucial. 
+Seeding diverse seed mixtures is an appropriate tool, 
+but restoration outcomes are highly variable.
+Considering constraints by land-use intensity and plant functional traits 
+during restoration could improve the efficacy of restoration efforts.
+
+2.	We established a full-factorial experiment with high-diversity seeding and topsoil disturbance
+in 73 grasslands along land-use intensity and productivity gradients 
+and evaluated the restoration success over five years.
+In addition, after five years we assessed the number of established species
+and tested whether specific traits promoted the establishment of sown species in interaction with productivity.
+
+3.	Plant diversity increased considerably when seeding and disturbance were combined,
+while seeding alone only slightly increased species richness.
+Along land-use gradients, we found no direct effects of grazing or mowing 
+on the establishment of sown species, 
+but fertilization indirectly limited establishment in the combined treatment
+via a negative effect of productivity.
+
+4.	Functional traits structured the establishment of sown species,
+especially in the combined treatments, but effects varied with productivity. 
+Species with low seed mass and low specific leaf area had greater establishment success
+in low-productivity grasslands, whereas species with high seed mass
+had greater establishment in high-productivity grasslands.
+
+
+5. *Synthesis and applications*
+Our results highlight the potential of using diverse seed mixtures for biodiversity restoration
+in a wide range of permanent grasslands,
+especially when combined with topsoil disturbance. 
+However, productivity both limited restoration success
+and affected establishment via an interaction with plant functional traits.
+As productivity is a major constraint in grassland restoration,
+we strongly recommend to first stop fertilization
+and reduce soil nutrient loads in highly productive grasslands.
+Restoration by seeding, with or without disturbance,
+should only be applied when productivity is reduced
+and the local environment should be considered
+to compile site-specific seed mixtures to maximise restoration success.
+
+
+\newpage
+
+
+## INTRODUCTION 
+
+Land-use intensification has dramatically impacted both biodiversity 
+and ecosystem service provision of grasslands [@ipbes2019; @newbold2016].
+Europe, for example, faces alarming and ongoing declines in area and deteriorations in conservation status
+of permanent grassland [@janssen2016], 
+i.e. continously managed grassland that was not used as cropland for at least five years.
+Severe declines in plant species richness have been especially caused by intensive fertilization [@gross2009; @socher2012],
+such that even common plant species have decreased in abundance at alarming rates [@jansen2019].
+Grasslands therefore are a major target of ecological restoration [@blakesley2016].
+Yet, our predictions of restoration success are often inaccurate
+because outcomes vary greatly among restoration efforts, 
+mostly because of widespread variability in restoration approaches and site conditions [@brudvig2017].
+
+To restore the local plant species richness in grasslands, 
+seed dispersal limitation must be overcome [@clark2007; @myers2009; @munzbergova2005].
+Most grassland species are short-distance seed dispersers [@coulson2001; @sperry2019] 
+and do not form persistent soil seed banks [@kiss2018].
+Therefore, a mandatory step to restore plant species richness is to actively introduce locally absent species.
+Seed sowing is a commonly applied technique that enables one 
+to tailor the species composition to a target community [@kiehl2010].
+In addition, diverse seeding could be implemented in agricultural routines
+to increase diversity at larger scales.
+Restoration by seeding has been successfully applied on ex-arable land 
+[@pywell2002; @wagner2020] and in low- and 
+high-productivity grasslands [@ladouceur2020; @pywell2007; @zobel2000].
+Yet, most studies considered single or few sites, 
+which makes it difficult to assess the significance of key constraining factors
+across real world gradients of land-use intensity and productivity.
+
+In the germination and seedling stages of a plant, 
+safe microsites such as gaps within the established vegetation are crucial [@grubb1977].
+These gaps in the established sward are often created via topsoil disturbance, 
+which enables seed-soil contact and amplifies seed germination 
+through reduced competition and increased light availability
+at the soil surface [@bischoff2018; @myers2009].
+Such microsites create a safe regeneration space even in productive grasslands [@foster2004],
+but competition with the regrowing vegetation sward in the years after disturbance
+may impede long-term establishment in productive sites [@dickson2008].
+This competition for light can be reduced with repeated biomass removal
+through mowing or grazing, thereby increasing the establishment success [@dickson2008].
+Additionally, grazing creates microsites by trampling, 
+which could further facilitate establishment [@kladivova2016].
+Although high-diversity seed mixtures increased diversity even in the long run [e.g. @maccherini2012], 
+it remains largely unclear how topsoil disturbance interacts with grazing or mowing 
+to shape establishment in managed grasslands.
+Determining how topsoil disturbance, grazing and mowing 
+affect the long-term establishment of seeds along productivity gradients 
+can improve outcome predictions and may provide guidance 
+on how to prioritize sites for restoration actions.
+
+To improve restoration success and maximise ecosystem functions, 
+plant functional traits can help to compile targeted seed mixtures [@laughlin2014]. 
+Because traits, especially canopy height, specific leaf area and seed mass,
+represent fundamental trade-offs of plant strategies in response to the environment
+and affect competitive and reproductive abilities [@westoby1998],
+they can be used, for example, to select potentially successful species to increase restoration success [@pywell2003].
+Further, a deeper understanding of assembly mechanisms in restoration 
+enables us to restore communities targeted to specific environmental conditions [@laughlin2014; @torok2017].
+Assembly mechanisms such as environmental filtering influence restoration success 
+because it structures the establishment of species with particular traits [@balazs2020; @zirbel2020].
+Knowledge on how traits interact with environmental gradients, 
+such as productivity and land-use intensity, 
+can assist in the selection of species based on local site conditions.
+
+Here, we aimed to assess the long-term restoration success using a diverse 
+and regionally adapted seed mixture along gradients of land-use intensity and productivity, 
+with and without prior topsoil disturbance.
+We established a full-factorial experiment in 73 grasslands 
+ranging from low-productivity sheep pastures and single-cut meadows 
+to highly fertilized meadows and mown pastures with four cuts pear year or intensive grazing.
+Short-term results from this experiment showed that intensively used, 
+species-poor grasslands increased strongly in species richness 
+when seeding and topsoil disturbance were combined, 
+while seeding alone had no effect on diversity [@klaus2017].
+Here, we assessed how land use, productivity and plant functional traits 
+structure the long-term establishment of sown species.
+Specifically, we investigate i) the effectiveness of seeding, topsoil disturbance
+and their combination to enhance plant diversity over time,
+ii) the degree to which land-use intensity and productivity 
+constrain the establishment of sown species 
+and iii) how traits, trait-environment and trait-management interactions 
+affect the establishment of sown species during restoration.
+
+\  
+
+## METHODS
+
+### Study design
+
+We analysed five years of a seeding and topsoil disturbance experiment in 73 grasslands
+as part of the Biodiversity Exploratories project [@fischer2010].
+We installed the experiment in three German regions that span gradients in soil characteristics,
+elevation and climate that are representative of large parts of Central Europe. 
+The regions comprise 
+i) the calcareous mid-mountain range Biosphere Reserve Schwäbische Alb (48.4°N, 9.4°E), 
+ii) the calcareous low-mountain range National Park Hainich-Dün and surroundings (51.1°N, 10.4°E) 
+and iii) the postglacial landscape of Biosphere Reserve Schorfheide-Chorin (53.0°N, 14.0°E).
+While grasslands in the Schwäbische Alb and Hainich-Dün are restricted to mineral soils,
+grasslands in Schorfheide-Chorin are situated on drained fen soils
+or slightly acidic sandy soils [@fischer2010].
+Within each region, we selected 23-25 permanent grasslands along gradients of land-use intensity, 
+productivity and corresponding plant diversity, ranging from unfertilized sheep pastures 
+with 70 species per 16 m^2^ to highly fertilized, productive 
+and frequently mown grasslands with 10 species per 16 m^2^ [@socher2012].
+To quantify land-use intensity, farmers were interviewed each year 
+to inquire on the amount of fertilizer used (in kg N ha^-1^), 
+mowing frequency per year and grazing intensity (livestock unit grazing days × ha^-1^) [@vogt2019].
+Here, we used averaged fertilization, mowing and grazing intensities from 2014 to 2018.
+
+We established a 2 × 2 factorial experiment with seeding and topsoil disturbance in 73 grasslands.
+This resulted in four 7 m × 7 m treatments (control, seeding only, 
+seeding and disturbance, disturbance only), 
+which we arranged in a rectangle with 2 m distance between treatments (see appendix S1). 
+In October 2014, we applied the disturbance treatment by mechanical perturbation of the established sward 
+and the topsoil down to 10 cm with a rotary harrow or a rotary cultivator.
+The topsoil disturbance created a high proportion of bare ground 
+[~50% in the following spring; @schafer2019] 
+and was similar to common agricultural re-seeding practices.
+We did not remove root and shoot fragments of the disturbed sward so that plants could possibly regrow.
+See @klaus2017 for further details on the experimental design.
+
+For the seeding treatments, we used commercially available regional seed mixtures 
+from certified seed producers, 
+composed of genotypes that are assumed to be adapted to regional environmental conditions [@bucharova2017].
+The mixtures consisted of common and less-common species,
+selected from the species pools of each individual region  [@fischer2010]
+and included grasses, legumes and forbs.
+Seeding density per species depended inversely on seed mass 
+(high: 100 seeds m^−2^ if seed mass < 1 mg, 
+medium: 34 seeds m^−2^ between 1 mg and 10 mg, low: 17 seeds m^−2^ > 10 mg). 
+Two-thirds of the mixture were sown in November 2014 and one-third in March 2015. 
+In total, we sowed 5.37 g m^-2^ and 66 species in Schwäbische Alb, 
+4.11 g m^-2^ and 52 species in Hainich-Dün and 3.47 g m^-2^ 
+and 47 species in Schorfheide-Chorin (no regional seeds of legumes available 
+from seed producers for this region).
+To estimate germination rates, we sowed 60 seeds per species and region
+in standard potting soil.
+We placed the pots outdoors from December 2015 until March 2014 in Bern, Switzerland, 
+to allow for cold stratification, relocated the pots thereafter to a greenhouse
+and counted the emerging seedlings over three months.
+
+
+We surveyed vegetation and measured productivity from 2015 to 2019 annually in May 
+before the first mowing or grazing took place.
+On all four 7 m × 7 m treatments in each of the 73 grasslands, 
+we recorded all vascular plant species on 2 m × 2 m quadrats and estimated percentage cover.
+As a measure of competition,
+annually we clipped all living plant biomass on one square meter on the control treatments
+(four 0.25 m^2^ squares, different but close-by locations each year, see appendix S1).
+We dried the biomass for 48 h at 80 °C and weighed it to the nearest gram. 
+In 2018, we could not access three grasslands due to early land use 
+(i.e. missing data for 12 observations).
+In total, we recorded 1448 observations over the five years.
+
+
+### Analysis
+
+*Seeding and topsoil disturbance effects on plant diversity*
+
+We analysed how seeding and topsoil disturbance influenced plant diversity over time. 
+We used two complementary diversity indices, namely species richness 
+and effective number of species S~PIE~, which accounts for community evenness 
+by weighing abundant species more than rare species.
+We calculated evenness as the probability of interspecific encounter $PIE = \sum_{i=1}^{S} p_i^2$,
+where $S$ is species richness and $p_i$ is the relative cover of species $i$,
+and transformed $PIE$ into an effective number of species 
+$S_{PIE} = \frac{1}{1 - PIE}$ [@chase2018; @jost2006]. 
+S~PIE~ equals species richness when all species have equal abundance, 
+but S~PIE~ decreases when cover is more unevenly distributed across species.
+We modelled species richness and S~PIE~ as a function 
+of seeding, disturbance and year, including all their interactions,
+and assumed Poisson error structure for species richness and 
+Gamma error structure for S~PIE~, both with log link.
+We treated year as categorical because effects over time were non-linear.
+We included varying intercepts for grassland site to account for the experimental design 
+and varying intercepts for year within region (five years times three regions) 
+because weather conditions and observers varied between years and regions.
+The multi-level models were estimated in a hierarchical Bayesian framework 
+using the Stan probabilistic language [@standevelopmentteam2020] 
+accessed via the package *brms* v2.13.0 [@burkner2017] in R v4.0.3 [@rcoreteam2020].
+For all models, we specified weakly informative normal priors with zero mean for fixed parameters 
+and default vague priors for the intercepts (see appendix S2).
+We ran four parallel chains and 10,000 iterations (5,000 discarded as burn-in) 
+and ensured convergence with R-hat values being <1.01 for all parameters.
+Model fit was assessed with posterior-predictive checks 
+using the package *bayesplot* v1.7.2 [@gabry2019; @gabry2019a; see appendix Fig. S2].
+We report 90% credible intervals (CrI) for posterior samples, 
+which do not overlap zero when 95% of the posterior is either above or below zero, 
+and we calculated conditional and marginal Bayes $R^2$ [@gelman2019] 
+to assess how much variation is explained by the treatments or varying intercepts.
+
+
+*Direct and indirect effects of land use on establishment*
+
+To evaluate how grazing, mowing and productivity modify or create 
+regeneration spaces and hence determine the number of established seeding species, 
+we modelled the absolute difference in sown species richness 
+between the seeding treatments and control ($\Delta$richness)
+as well the difference in total species richness.
+We fitted two separate multivariate models for seeding (only) 
+and seeding and topsoil disturbance (combined) treatments
+in the first and in the fifth year.
+Multivariate models sample the parameters jointly for the sub-models and, thus, allow modelling 
+response variables measured on the same experimental unit.
+We expected direct effects of grazing (log-transformed grazing days ha^-1^), 
+mowing frequency and productivity (log-transformed g m^-2^) on establishment and 
+included region effects as well as an effect of $\Delta$richness 
+of year one on year five (see also Fig. 2).
+Because fertilization intensity (log-transformed kg Nitrogen ha^-1^) 
+was closely correlated to mowing frequency [$\rho$=0.66, @vogt2019], 
+we included only an indirect effect of fertilization on $\Delta$richness via productivity.
+We modelled productivity with Gamma distribution and log link 
+and assumed Gaussian errors for $\Delta$richness.
+The repeated biomass measurements were simultaneously modelled 
+as arising from a normal distribution with a mean equal to the 
+‘true’ latent productivity of each grassland site and measurement error $\sigma$.
+We chose arithmetic means and standard deviations of harvested biomass 
+as informed priors for the means of latent productivity, (i.e., varying between grasslands) 
+and a weakly informative prior for the measurement error $\sigma$ 
+(see appendix S4).
+The multivariate models were estimated using *rstan* v2.19.3 [@standevelopmentteam2020]. 
+
+
+*Plant functional traits effects on establishment*
+
+To explore how functional traits affect the establishment of sown species 
+five years after seeding along the productivity gradient, 
+we modelled establishment with logistic regression.
+We assumed sown species to have successfully established 
+in the seeding treatments if they were present in year five.
+Because some of the sown species may have been present before the start of the experiment, 
+we only judged whether a species successfully established when the species was absent 
+on either the control or disturbance-only treatment in any year.
+We kept 2,746 observations, because sown species were already present
+in the respective grasslands in 37% of the cases in the Alb region,
+36% in the Hainich region and 21% in the Schorfheide region (see Tables S3 and S4).
+This definition is conservative, especially for common species, 
+but reduces the number of false positive observations where a sown species was already present. 
+From the LEDA Traitbase [@kleyer2008] we extracted specific leaf area (relative growth rate), 
+canopy height (competitive ability of the adult plant) 
+and seed mass (energy for seedling recruitment) and averaged the trait values by species.
+
+To test for the effects of traits and trait-environment interactions on establishment, 
+we modelled binary establishment with logit link function as a function of 
+height (log.), seed mass (log.) and specific leaf area. 
+We included estimated live seeding density (seeding density multiplied by germination rate)
+as a continuous predictor.
+Informed by a negative effect of productivity on the number of established species, 
+we initially included productivity (log-transformed, as a measure of competition) 
+and interactions of traits with productivity.
+We included varying intercepts for both species identity and grassland site 
+due to the multi-level structure and scaled all predictors to unit standard deviation. 
+Productivity was again modelled as latent 
+(see appendix S5). 
+
+To test for trait-grazing and trait-mowing effects,
+we fitted three additional models with i) trait-grazing interactions, 
+ii) trait-mowing interactions and iii) both trait-grazing and trait-mowing interactions
+in addition to trait-productivity interactions. 
+To judge whether including grazing and mowing interactions improved
+the prediction of establishment, we compared models based on 
+the expected log point-wise predictive density from leave-one-out cross-validation [@vehtari2017; @vehtari2020].
+
+\  
+
+## RESULTS
+
+*Seeding and topsoil disturbance effects on plant diversity*
+
+High-diversity seeding had clear positive effects on species richness
+over the five years of this study, but less so on S~PIE~,
+which accounts for community evenness. 
+The seeding effect on species richness increased steadily over time,
+from slightly positive in the first year to clearly positive in the fifth year 
+(seeding $\beta$=0.04, 90% CrI: -0.0 to 0.1, 
+plus seeding\*5th year $\beta$=0.09, 90% CrI: 0.0 to 0.2; Fig. 1a; appendix Table S1). 
+Transformed to the response scale with average species richness of 25.7 per 4 m^2^ on the control, 
+this resulted in an increase in 3.1 species in year five (Fig. 1c).
+Seeding alone had no clear effect on S~PIE~ (Fig. 1a, f), 
+which suggests that increases in richness were compensated by decreases in evenness
+because the sown species established with low abundance.
+Topsoil disturbance led to temporary increases in both species richness and S~PIE~ (Fig. 1a, b, e),
+indicating the germination of ruderal species and an increase in evenness after disturbance.
+
+Both species richness and S~PIE~ considerably increased when seeding and topsoil disturbance were combined.
+For species richness, the seeding and disturbance interaction was clearly positive in the first year
+but became weaker over time (seeding\*disturbance $\beta$=0.25, 90% CrI: 0.2 to 0.3, 
+plus seeding\*disturbance\*5th year $\beta$=-0.16, 90% CrI: -0.3 to -0.1; Fig. 1a, d; appendix Table S1). 
+S~PIE~ was also positively affected by the seeding\*disturbance interaction 
+(seeding\*disturbance $\beta$=0.15, 90% CrI: 0.0 to 0.3), 
+but temporary increases in S~PIE~ were mainly driven by the disturbance effect
+(e.g. disturbance\*2nd year $\beta$=0.15, 90% CrI: 0.0 to 0.3; Fig. 1a, e). 
+On the response scale, the combination of seeding and disturbance led 
+to an increase in species richness by 8.3 species in the fifth year (Fig. 1d) 
+and an increase in S~PIE~ by 0.6 (Fig. 1g), given an average S~PIE~ of 6.2 on the control.
+
+*Direct and indirect effects of land use on establishment*
+
+We found no direct effects of grazing or mowing on the number of established species ($\Delta$richness),
+but fertilization indirectly limited the long-term establishment on the combined treatment 
+via a negative effect of productivity on $\Delta$richness in year five
+(Fig. 2b, d; appendix Tables S2 and S3).
+$Delta$richness in the first year was less related to productivity or land use, 
+underlined by lower $R^2$ values for both treatments compared to the fifth year (Fig. 2).
+Instead, $\Delta$richness of the combined treatment in the first year 
+was higher when considering all species (Intercept $\alpha$=9.84, 90% CrI: 8.4 to 11.2; Fig. 2b) 
+compared to $\Delta$richness of seeding species (Intercept $\alpha$=6.10, 90% CrI: 5.2 to 7.0; Fig. 2d),
+which suggests a considerable but temporary contribution of ruderal species 
+to $\Delta$richness after topsoil disturbance.
+However, sown species $\Delta$richness increased until the fifth year,
+and the difference to $\Delta$richness considering all species decreased considerably (Fig. 2b, d). 
+The negative effect of productivity on $\Delta$richness was less clear for the seeding-only treatment,
+but turned from neutral to weakly negative over time for sown species $\Delta$richness (Fig. 2a, c).
+
+*Plant functional traits effects on establishment*
+
+Plant functional traits considerably influenced establishment, 
+but effects of traits on establishment interacted with productivity. 
+Establishment was consistently predicted by productivity, 
+specific leaf area and their interaction  (Fig. 4c, d).
+Productivity decreased establishment drastically 
+such that the probability of successful establishment 
+in year five was almost zero in productive grasslands for the
+seeding-only and seeding and topsoil disturbance treatments (insets in Fig. 4). 
+Species with low specific leaf area had higher average establishment success,
+but trait-productivity interactions for both seeding treatments 
+indicate that species with low specific leaf area 
+established increasingly better at low-productivity sites (Fig. 4c, f).
+The effects of height and seed mass were less unclear (Fig. 4a, b, d, e), 
+but the trait-productivity interactions suggest that tall species with high seed mass
+established better at highly productive sites in the combined treatment (Fig. 4d, e).
+We tested for additional trait-grazing and trait-mowing interaction effects 
+on establishment, but based on leave-one out cross-validation, 
+neither interaction improved the prediction of establishment success (appendix Table S7). 
+
+Live seeding density (mean 7.5 viable seeds m^-2^, appendix Fig. S6) increased establishment rates
+for both seeding-only ($\beta$=0.68, 90% CrI: 0.4 to 0.9, appendix Table S4) 
+and seeding and topsoil disturbance treatments ($\beta$=0.88, 90% CrI: 0.7 to 1.1).
+The effects on establishment on the seeding-only treatment were less clear, as
+overall parameter uncertainty was higher and average establishment success lower 
+(Intercept $\alpha$=-4.02, 90% CrI: -4.7 to -3.4) 
+compared to the combined treatment (Intercept $\alpha$=-2.57, 90% CrI: -3.1 to -2.1).
+The marginal Bayes $R^2$ was considerably lower than the conditional $R^2$ for both seeding treatments
+(seeding only: median $R_{marg}^2$=0.20, $R_{cond}^2$=0.47; 
+seeding and disturbance: median $R_{marg}^2$=0.29, $R_{cond}^2$=0.46), 
+which implies that grassland site and species identity 
+accounted for a considerable share of variance not explained by traits. 
+
+
+\  
+
+## DISCUSSION
+
+The ongoing biodiversity crisis reflects an urgent need 
+to restore plant diversity in grasslands wherever possible, 
+but predicting restoration success is remarkably difficult [@brudvig2017],
+and restoration actions need to be carefully adapted to local site conditions [@laughlin2014; @torok2017].
+Our results highlight the potential for using high-diversity seed mixtures 
+to restore plant diversity across a wide range of permanent grasslands, 
+especially when combined with topsoil disturbance.
+However, productivity limited the overall establishment success of sown species 
+and shaped establishment via an interaction with plant functional traits. 
+We demonstrate that productivity is a major constraint 
+for the restoration of plant diversity in managed grasslands,
+but productivity can be used as an indicator to plan restoration actions 
+and select suitable target species along productivity gradients.
+
+The most effective method for increasing plant diversity
+was the combination of seeding and topsoil disturbance. 
+This finding is well in line with early results from this experiment [@klaus2017] 
+and confirms previous studies, which conclude that species richness 
+is largely limited by dispersal limitation and the lack of a persistent soil seed bank
+for most species [@clark2007; @klaus2018; @myers2009].
+Concurrent with previous research, disturbing the topsoil reduced microsite limitations
+and effectively created regeneration space for the seeded species to establish [@bischoff2018; @grubb1977; @munzbergova2005].
+Yet, over the five years of this study, species richness slowly increased 
+in the seeding-only treatment as well.
+This suggests that at least some species can establish without topsoil disturbance, 
+for instance when microsites are created by grazing [@kladivova2016; @maccherini2012].
+
+While we observed clear seeding effects on species richness, 
+we found weaker effects on the effective number of species S~PIE~,
+indicating that increases in richness were partly outweighed by decreases in community evenness 
+due to low cover of the newly established species.
+In contrast to @ladouceur2020, who reported positive effects of seeding-only on S~PIE~
+across a range of natural and semi-natural grasslands, 
+in our study the lack of a seeding-only effect on S~PIE~ suggests that 
+when topsoil disturbance was not applied, sown species 
+had not yet become important members of the community. 
+A possible explanation is that a higher average productivity of our grasslands
+limits establishment more strongly compared to the partially degraded grasslands 
+included in the study by @ladouceur2020.
+The weaker positive effects of the seeding treatments on S~PIE~ due to increases in evenness
+suggest that creating microsites is important for the introduced species to establish 
+with noticeable cover, but it remains an open question as to how long these differences persist.
+
+We found no direct effects of land-use intensity on the number of established seeding species, 
+but fertilization indirectly limited long-term establishment 
+via a negative effect of productivity. 
+At first, the intensively used productive grasslands 
+benefited most from seeding and topsoil disturbance [@klaus2017], 
+but initial increases in species richness were recorded right after the set-up of the experiment,
+before the first mowing or grazing management,
+and were partly driven by ruderal species from the soil seed bank. 
+While previous studies reported that productivity 
+limits seeding successes in grasslands [@dickson2008; @foster2001],
+our study is the first to confirm this pattern along a realistic grassland productivity gradient. 
+The increasing impact of productivity on establishment over time
+suggests that enhancing plant diversity through seeding 
+is only an ephemeral success in productive grasslands 
+and highlights that recruitment limitation is an at least as important constrain
+for species richness as dispersal limitation  [@clark2007; @munzbergova2005].
+Concurrently, the number of established species 
+correlated positively with the resident species richness (see appendix S6), 
+both of which are constrained by productivity [@socher2012].
+Thus, productivity limits both resident species richness and the establishment of introduced species,
+indicating that both species richness and the potential 
+to introduce new species decrease with higher fertilization, which increases productivity.
+
+Several studies have emphasized that soil fertility 
+and its determinant role for productivity as one of the most important constraints
+to restoring species-rich grasslands [@dickson2008; @walker2004],
+and fertilization significantly contributes to this constraint. 
+However, we were not able to identify a threshold of productivity 
+at which restoration would change from successful to failed.
+Our results suggest that the establishment success is generally low 
+at productivity levels above ~250 g m^-2^ aboveground green biomass in May, 
+but the establishment probably still depends 
+to a significant extent on further site characteristics. 
+One such factor that determines seedling establishment might be litter biomass. 
+While small amounts of litter can facilitate seedling recruitment in dry grasslands, 
+dense litter (>500 g m^-2^) largely inhibits recruitment [@loydi2013], 
+However, we rarely observed significant amounts of litter in our grasslands,
+which is typical for regularly used Central European grasslands [@gross2009].
+
+Interestingly, grazing and mowing had no effect on the number of established species.
+Grazing is assumed to create microsites by feeding and trampling and, hence, 
+can increase the recruitment from seeds [@kladivova2016],
+but effects of grazing on establishment are usually low [@maccherini2012; @rasran2007].
+In our study, bare soil cover was hardly related to grazing or mowing intensities (appendix Fig. S9).
+We suspect that productivity partly reflects the availability of microsites,
+because sparse vegetation with low aboveground biomass provides more space per se, 
+or because the effects of grazing and mowing on microsites
+were ovrruled by productivity.
+Based on our results, we conclude that, in fertile grasslands, 
+productivity must be reduced to ensure restoration success.
+The main focus in productive grasslands, therefore, must be 
+to stop fertilization and reduce the soil nutrient loads,
+before fine-tuning the grazing and mowing management.
+
+Plant functional traits clearly affected establishment.
+Sown species with a low specific leaf area consistently 
+established better, independent of productivity.
+However, the patterns we observed for the seeding-only treatment were less clear, 
+probably due to generally lower establishment rates 
+and subsequently greater uncertainty in the relationships between traits and establishment.
+When seeding was combined with topsoil disturbance, we also found that low-competitive species 
+with low canopy height and low seed mass 
+(such as *Dianthus carthusianorum* or *Sanguisorba minor*) tended to establish better.
+In part, these main effects were possibly driven by the fact that 
+the overall establishment rate decreased with productivity. 
+At low levels of productivity, the plant community is characterized by 
+species with a low specific leaf area [@allan2015],
+as conservative and slow-growing species with low specific leaf area 
+have no disadvantage in establishing and are possibly better adapted to less fertile environments.
+
+Such adaptions to the environment are reflected in the interactions 
+between functional traits and productivity that shape establishment during restoration. 
+For instance, in the combined treatment, species with high seed mass 
+established better in productive sites. 
+Having considerable energy stored in large seeds increases recruitment rates [@clark2007] 
+and seedling survival rates [@metz2010], 
+which seems to be a particular advantage in productive sites,
+where competition with the regrowing vegetation selects for the most competitive seedlings. 
+In contrast, species with low specific leaf area 
+established better at sites of low productivity.
+The fast resource-acquisition strategy of species with high specific leaf area
+is beneficial under nutrient-rich conditions, for instance resulting from intensive fertilization [@allan2015;@vries2012].
+Our results confirm the finding that this adaption to nutrient surplus in productive sites
+does not represent an advantage under conditions with less competition for light [@zirbel2020],
+where, for instance, water availability limits plant growth.
+We propose that sown species in grasslands are environmentally filtered by productivity 
+and successful establishers possibly reflect the traits of the resident plant community [@breitschwerdt2015;@ames2020].
+Variation in establishment success along environmental gradients 
+and trait-environment interactions are rarely studied, 
+but insights on these relationships provide valuable information
+to prioritize restoration sites and compile site-specific seed mixtures
+to maximise success and ecosystem functions during restoration [@laughlin2014; @balazs2020]
+
+\  
+
+## ACKNOWLEDGEMENTS
+
+We thank Judith Hinderling, Torsten Meene, Svenja Kunze and many students for help during fieldwork
+and three anonymous reviewers for very constructive comments.
+We also thank the managers of the three Exploratories, Kirsten Reichel-Jung, 
+Iris Steitz, Sandra Weithmann, Florian Straub, Katrin Lorenzen, Juliane Vogt, 
+Martin Gorke and Miriam Teuscher for their work in realizing this experiment 
+and maintaining the plot and project infrastructure, Christiane Fischer 
+and Jule Mangels for giving support through the central office, Michael Owonibi 
+and Andreas Ostrowski for managing the central database, and Eduard Linsenmair, 
+Dominik Hessenmöller, Jens Nieschulze, Francois Buscot, Ernst-Detlef Schulze, 
+Wolfgang W. Weisser, and the late Elisabeth Kalko for their role 
+in setting up the Biodiversity Exploratories project.
+The work has been funded by the German Research Foundation (DFG) Priority Program 1374 
+‘Infrastructure-Biodiversity-Exploratories’ (FI 1246/15-2; HA 4597/6-3; HO 3830/2-4; KL 2265/4-4). 
+Field work permits were issued by the responsible state environmental offices 
+of Baden-Württemberg, Thüringen, and Brandenburg (according to § 72 BbgNatSchG).
+
+\  
+
+## AUTHORS’ CONTRIBUTIONS
+
+D.P., U.H., N.H., V.K., T.K. and M.F. conceived the ideas and designed the experiment, 
+V.K., D.S., R.B. and M.F. collected the data, M.F. analysed the data 
+and led the writing of the manuscript.
+All authors contributed critically to the drafts and gave final approval for publication.
+
+\  
+
+## DATA AVAILABILITY STATEMENT
+
+All data and code used for this study will be archived within the BExIS database 
+of the Biodiversity Exploratories project (https://bexis.uni-jena.de/PublicData).
+
+\newpage
+
+## REFERENCES
+
+<div id="refs"></div>  <!-- put the references here --> 
+
+\newpage
+
+
+## FIGURES AND TABLES
+
+
+
+```{r treatments, out.width = "100%", fig.cap = captreatments, echo=FALSE}
+  knitr::include_graphics("figs/01-1_treatment-effects.pdf")
+captreatments <- "
+Effects of seeding and topsoil disturbance 
+on species richness and S~PIE~ over time. 
+(a) Effect sizes of seeding, disturbance and the seeding and disturbance interaction, 
+as the main and interacting effects with years, for species richness and S~PIE~ 
+(intercept, year main effects and varying intercepts not shown, see appendix Table S1). 
+Both diversity measures were modelled with log-link assuming
+Poisson and Gamma error structure, respectively.
+Panels (b) to (g) display differences between treatments and 
+the control on the response scale. Seeding alone had small positive effects on species richness, 
+which increased over time (c), while this was not found for S~PIE~ (f).
+The combination of seeding and disturbance had a clear positive effect 
+on both diversity metrics, although it was weaker for S~PIE~.
+To calculate differences between treatments and control, 
+we predicted species richness and S~PIE~ based on additive parameter effects (a), 
+transformed predicted values to the response scale
+and calculated the difference in predicted values between treatments and control.
+Points indicate medians along with 90\\% CrI."
+```
+
+
+\newpage
+
+
+```{r sem, out.width = "100%", fig.cap = capsem, echo=FALSE}
+  knitr::include_graphics("figs/01-2_land-use-delta-richness.pdf")
+capsem <- "
+Direct and indirect land-use effects on the number of established species
+($\\Delta$richness, the difference in species richness between treatment and control)
+for total species richness and sown species richness.
+Land-use effects on $\\Delta$richness were absent on the seeding-only treatment (a, c).
+Fertilization had an indirect negative effect via productivity on $\\Delta$richness in the fifth year
+for both (b) total and (d) sown species richness on the seeding and disturbance treatment. 
+In the first year after disturbance, the larger $\\Delta$richness for total species richness 
+indicates a considerable increase in unsown species on the seeding and disturbance treatment, 
+which almost completely vanished in the fifth year.
+Positive paths are shown as solid and negative paths as dashed lines 
+along with standardized regression coefficients and 90\\% CrI, 
+in blue (positive) and red (negative) when the CrI does not overlap zero.
+Fixed effects of region are displayed in the $\\Delta$richness boxes."
+```
+
+\newpage
+
+
+```{r productivity-predictions, out.width = "60%", fig.cap = capproductivitypredictions, echo=FALSE}
+  knitr::include_graphics("figs/01-3_delta-sown-richness-predict.pdf")
+capproductivitypredictions <- "
+Conditional effect of productivity on 
+the number of established sown species as compared
+to the control ($\\Delta$richness) in the fifth year.
+(a) Overall sown species $\\Delta$richness was lower 
+and the effect of productivity weak on the seeding-only treatment, 
+(b) but sown species $\\Delta$richness declined with productivity on the combined treatment. 
+Lines denote the median and 90\\% CrI of sown species $\\Delta$richness 
+across all 73 grasslands (grey) and within regions (coloured), 
+conditioned on mean values of the other predictors (see Fig. 2).
+"
+```
+
+
+\newpage
+
+
+```{r trait-predictions, out.width = "100%", fig.cap = captraitpredictions, echo=FALSE}
+  knitr::include_graphics("figs/01-4_traits-predict.pdf")
+captraitpredictions <- "
+Conditional effects of plant height, 
+seed mass, specific leaf area and productivity (log scale) on the establishment 
+of sown species on (a)-(c) the seeding-only and (d)-(f) the seeding and topsoil disturbance treatments. 
+Especially in the combined treatment, trait effects on establishment 
+interacted considerably with productivity. 
+Coloured lines denote the median and 90\\% CrI for low (mean minus one SD, red) 
+and high (mean plus one SD, blue) trait values, 
+conditioned on mean values of the other traits and mean sowing density.
+In each panel, inset plots show the median and and
+90\\% CrI of the parameters used for prediction.
+See Table S4 for details."
+```
+
+
+
+
+\clearpage
+
