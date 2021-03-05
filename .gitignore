@@ -4,3 +4,7 @@
 .Ruserdata
 *.rds
 *.DS_Store
+
+# don't un-ignore the data/ folder, as the data supporting this manuscript 
+# should only be publicly available at the BExIS database, where metadata is available
+data/
