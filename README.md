@@ -4,15 +4,15 @@
 
 Martin Freitag
 
-04 March 2021
+18 March 2021
 
 This project provides the R code resources to reproduce the analyses of
 the manuscript
 
 Freitag M, Klaus VH, Bolliger R, Hamer U, Kleinebecker T, Prati D,
-Schäfer D, Hölzel N (in revision): *Restoration of plant diversity in
-permanent grassland by seeding: assessing the limiting factors along
-land-use gradients.* submitted to *Journal of Applied Ecology.*
+Schäfer D, Hölzel N: *Restoration of plant diversity in permanent
+grassland by seeding: assessing the limiting factors along land-use
+gradients.* accepted in *Journal of Applied Ecology.*
 
 # Structure
 
@@ -101,7 +101,7 @@ We use `rstan` to fit the models, and the associated Stan script
 **02-1\_create-figures-treatment.R**,
 **02-2\_create-figures-multivariate.R** and
 **02-3\_create-figures-traits.R** contain scripts to create figures for
-the three above-menationed analyses.
+the three above-mentioned analyses.
 
 **03\_supplement\_delta-richness-2019-resident-richness.R** We
 additionally analysed how the number of established species correlates
@@ -119,8 +119,7 @@ supplementary material. The *Freitag-et-al\_revision\_main-text.Rmd*
 file contains the manuscript main text and imports figures from the
 `figs/` folder. *Freitag-et-al\_revision\_supporting-information.Rmd*
 contains additional figures and tables from the `tables/` folder. The
-submitted manuscript PDF proofs and the peer-review history to the
-manuscript is stored in the `doc/` folder as well.
+submitted manuscript PDF proofs are stored in the `doc/` folder as well.
 
 ## Package versioning
 

@@ -17,9 +17,9 @@ Martin Freitag
 
 This project provides the R code resources to reproduce the analyses of the manuscript
 
-Freitag M, Klaus VH, Bolliger R, Hamer U, Kleinebecker T, Prati D, Schäfer D, Hölzel N (in revision):
+Freitag M, Klaus VH, Bolliger R, Hamer U, Kleinebecker T, Prati D, Schäfer D, Hölzel N:
 *Restoration of plant diversity in permanent grassland by seeding: assessing the limiting factors along land-use gradients.* 
-submitted to *Journal of Applied Ecology.*
+accepted in *Journal of Applied Ecology.*
 
 
 # Structure
@@ -73,7 +73,8 @@ The **seeding-density-germination-rates.txt** file contains the seeding densitie
 of the species in the seed mixtures. 
 Based on seed mass, we have sown seeds in three densities
 (*seeddensity*, categorical, and *seeddensity.per.m2*, numeric). 
-We estimated seed viability by counting the number of emerging seedlings in a germination test (*germinationrate*, percentage of germinated seeds).
+We estimated seed viability by counting the number of emerging seedlings in a germination test (*germinationrate*, 
+percentage of germinated seeds).
 
 
 ## Scripts
@@ -103,7 +104,7 @@ Stan script *01-2_traits-binomial.stan* can be found in the *Stan_files/* folder
 
 **02-1_create-figures-treatment.R**, **02-2_create-figures-multivariate.R** and 
 **02-3_create-figures-traits.R** contain scripts to create figures for the three
-above-menationed analyses.
+above-mentioned analyses.
 
 **03_supplement_delta-richness-2019-resident-richness.R** 
 We additionally analysed how the number of established species correlates with
@@ -121,8 +122,7 @@ The *Freitag-et-al_revision_main-text.Rmd* file contains the manuscript main tex
 figures from the `figs/` folder. 
 *Freitag-et-al_revision_supporting-information.Rmd* contains additional figures
 and tables from the `tables/` folder.
-The submitted manuscript PDF proofs and the peer-review history to the manuscript
-is stored in the `doc/` folder as well.
+The submitted manuscript PDF proofs are stored in the `doc/` folder as well.
 
 
 ## Package versioning
