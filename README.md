@@ -1,18 +1,20 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# Restoration of plant diversity in permanent grassland by seeding: assessing the limiting factors along land-use gradients
+# Restoration of plant diversity in permanent grassland by seeding: assessing the limiting factors along land-use gradients [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4616821.svg)](https://doi.org/10.5281/zenodo.4616821)
+
+
 
 Martin Freitag
 
-04 March 2021
+18 March 2021
 
 This project provides the R code resources to reproduce the analyses of
 the manuscript
 
 Freitag M, Klaus VH, Bolliger R, Hamer U, Kleinebecker T, Prati D,
-Schäfer D, Hölzel N (in revision): *Restoration of plant diversity in
+Schäfer D, Hölzel N: *Restoration of plant diversity in
 permanent grassland by seeding: assessing the limiting factors along
-land-use gradients.* submitted to *Journal of Applied Ecology.*
+land-use gradients.* accepted in *Journal of Applied Ecology.*
 
 # Structure
 
